@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +7,67 @@
     <title>Bus trable</title>
     <!-- css link -->
     <link rel="stylesheet" href="CSS/style.css">
+    <!-- font awsome link -->
+    <script src="https://kit.fontawesome.com/b9da60a800.js" crossorigin="anonymous"></script>
+    <!-- tailwind css or daisy ui cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
+<body class="font-raleway container m-auto  " >
     <!--header start  -->
     <header>
         <!-- navbar start -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+              
+                  <a class=" text-4xl font-extrabold ">P-ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-[#1DD1001A] font-bold text-[#1DD100]">Bus <i class="fa-solid fa-van-shuttle"></i> </a>
+                </div>
+              </div>
+        </nav>
+          <!-- navbar end -->
     </header>
     
-    <main></main>
+    <main>
+        <!-- Banner section start -->
+        <section class="bg-[url(images/banner.png)] bg-cover h-[570px] bg-no-repeat space-y-8 mt-8 pt-20">
+            <h1 class="text-6xl font-extrabold text-white flex justify-center ">End-to-End Travel with </h1>
+            <span class="text-6xl font-extrabold text-[#1DD100] flex justify-center">P Paribahan</span>
+            <p class="text-white text-center">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+        <div class="flex justify-center">
+            <a id="#" class="btn text-black bg-[#1DD100]">Buy Tickets</a>
+        </div>
+        </section>
+        <!-- banner section end -->
+
+        <!-- copupon section start -->
+        <section class="mt-7">
+            <h1 class="text-4xl font-bold flex justify-center">Best offers for you</h1>
+            <!-- left copupon -->
+            <div class="w-[40%] bg-[#FFBF0F] rounded-3xl h-40">
+                <h2>fdfl</h2>
+                <img src="images/cupon-devider.png" alt="">
+
+
+
+            </div>
+            <!-- right copupon -->
+            <div></div>
+        </section>
+       
+    </main>
     <footer></footer>
     <!-- javascript link -->
     <script src="JS/app.js"></script>

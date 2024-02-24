@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus trable</title>
+    <title>Bus Tickets</title>
     <!-- css link -->
     <link rel="stylesheet" href="CSS/style.css">
     <!-- font awsome link -->
@@ -14,9 +14,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="font-raleway container m-auto  " >
+<body class="font-raleway  " >
     <!--header start  -->
-    <header>
+    <header class="container m-auto " >
         <!-- navbar start -->
         <nav>
             <div class="navbar bg-base-100">
@@ -42,7 +42,7 @@
     
     <main>
         <!-- Banner section start -->
-        <section class="bg-[url(images/banner.png)] bg-cover h-[570px] bg-no-repeat space-y-8 mt-8 pt-20 rounded-2xl">
+        <section class=" container m-auto  bg-[url(images/banner.png)] bg-cover h-[570px] bg-no-repeat space-y-8 mt-8 pt-20 rounded-2xl">
             <h1 class="text-6xl font-extrabold text-white flex justify-center ">End-to-End Travel with </h1>
             <span class="text-6xl font-extrabold text-[#1DD100] flex justify-center">P Paribahan</span>
             <p class="text-white text-center">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
@@ -53,47 +53,107 @@
         <!-- banner section end -->
 
         <!-- copupon section start -->
-        <section class=" mt-7">
+        <section class=" container m-auto  mt-7">
             <h1 class="text-4xl font-bold flex justify-center">Best offers for you</h1>
+            <div class="flex gap-7 mt-10">
             <!-- left copupon -->
-            <div class="flex mt-10">
               <div class="flex ">
-                <div class="bg-[#FFBF0F] w-[500px] h-[150px] rounded-2xl pt-6 pl-10">
+                <div class="bg-[#FFBF0F] w-[470px] h-[150px] rounded-s-2xl pt-6 pl-10 relative">
                   <h1 class="text-4xl font-extrabold">15% OFF</h1>
                   <h2 class="text-2xl font-semibold" > on your next purchase </h2>
                   <p>  use by January 2024</p>
+                <img class="absolute top-0 h-full right-3" src="images/cupon-devider.png" alt="">
+
                 </div>
 
-                <img class="" src="images/cupon-devider.png" alt="">
 
-                <div class="bg-[#FFBF0F] w-[150px] h-[150px] rounded-xl p-4 relative right-11 pt-10">
+                <div class="bg-[#FFBF0F] w-[150px] h-[150px] rounded-e-2xl p-4  pt-10">
                   <h1 class="text-3xl font-bold">NEW15</h1>
                   <p class="">Coupon Code</p>
 
                 </div>
-                <!-- left copupon end -->
             </div>
             <!-- right copupon -->
             <div class="flex ">
-              <div class="bg-[#FFBF0F] w-[500px] h-[150px] rounded-2xl p-4">
+              <div class="bg-[#F78C9C] w-[470px] h-[150px] rounded-s-2xl pt-6 pl-10 relative">
                 <h1 class="text-4xl font-extrabold">20% OFF</h1>
                 <h2 class="text-2xl font-semibold" > on your next purchase </h2>
-                <p> use by January 2024</p>
+                <p>  use by January 2024</p>
+              <img class="absolute top-0 h-full right-3" src="images/cupon-devider.png" alt="">
               </div>
-
-              <img class="" src="images/cupon-devider.png" alt="">
-
-              <div class="bg-[#FFBF0F] w-[150px] h-[150px] rounded-2xl p-4 relative right-11">
-                <h1 class="text-3xl font-bold"> Couple 20</h1>
+              <div class="bg-[#F78C9C] w-[150px] h-[150px] rounded-e-2xl p-4  pt-10">
+                <h1 class="text-3xl font-bold">NEW15</h1>
                 <p class="">Coupon Code</p>
-
               </div>
           </div>
-          <!-- right copupon end -->
             </div>
-            <div class="flex justify-center">
+          <!-- right copupon end -->
+
+            <div class="flex justify-center mt-12">
               <button class="btn btn-outline btn-success">See All Offer</button></div>
         </section>
+       <!-- /paribhon section  -->
+        <section class="  bg-[#F7F8F8] ">
+          <!-- title -->
+          <div class="title container m-auto mt-10 pt-10 space-y-5">
+            <h1 class="text-4xl font-bold text-center ">P.H Paribahan </h1>
+            <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+             <!-- Paribhon Details -->
+            <div class="flex bg-[#FFFFFF] p-8 rounded-xl h-[400px]">
+              <div class="container  h-[400px]  rounded-lg  w-[70%] relative">
+                <nav class="flex gap-2 justify-between h-12">
+                 <div class="flex gap-2 "> <img class="" src="images/bus-logo.png" alt="">
+                  <div >
+                    <p class="text-2xl font-bold ">Greenline Paribahan</p>
+                    <p>Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+                  <div class=" rounded-lg p-2">
+                    <button class="btn text-[#1DD100] bg-[#1DD10026]"><img src="images/seat-green.png" alt=""><span id="total-seat">40</span>seats left</button>
+                  </div>
+                </nav>
+                <!-- Route details -->
+                <div class="bg-[#F7F8F8] mt-7 p-8 rounded-2xl">
+                  <div class="flex justify-between ">
+                    <p>Route</p>
+                    <p class=" font-semibold">Dhaka - Sylhet</p>
+                  </div>
+                  <br>
+                  <hr>
+                  <br>
+                  <div class="flex justify-between ">
+                    <p>Departure Time</p>
+                    <p class=" font-semibold">9:00 PM</p>
+                  </div>
+                  <br>
+                  <hr>
+                  <br>
+                  <div class="flex gap-12 justify-center">
+                    <a href="#" class="btn text-black bg-[#0307120D] p-5">Boarding Point - Laxmipur</a>
+                    <a href="#" class="btn text-black bg-[#0307120D] p-5">Dropping Point - Bogura</a>
+                    <a href="#" class="btn text-black bg-[#0307120D] p-5">Est. Time - 11 Hour</a>
+                  </div>
+                </div>
+                  
+               </div>
+               <div class="flex justify-center items-center w-[30%] text-center relative">
+               <img class="absolute  left-7 h-[400px]" src="images/info-devider.png" alt="">
+
+                <div class="space-y-3 "><img class="relative left-10 " src="images/fare.png" alt="">
+                  <h1 id="" class="text-4xl font-semibold "><span>550</span> Taka</h1>
+                  <p>Per Seat</p></div>
+
+               </div>
+            </div>
+
+          </div>
+          <div class="mt-30">
+            <h2>ffjjffj</h2>
+          </div>
+        </section>
+        
+       
+
        
     </main>
     <footer></footer>

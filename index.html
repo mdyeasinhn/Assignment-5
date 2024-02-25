@@ -13,8 +13,13 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
 </head>
-<body class="font-raleway  " >
+<body class="font-raleway  "  >
     <!--header start  -->
     <header class="container m-auto " >
         <!-- navbar start -->
@@ -47,7 +52,7 @@
             <span class="text-6xl font-extrabold text-[#1DD100] flex justify-center">P Paribahan</span>
             <p class="text-white text-center">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
         <div class="flex justify-center">
-            <a onclick="buyTickets()"id="buy-tickets" href="#" class="btn text-black bg-[#1DD100]">Buy Tickets</a>
+            <a onclick="buyTickets()"id="buy-tickets" href="#p-ticket" class="btn text-black bg-[#1DD100]">Buy Tickets</a>
         </div>
         </section>
         <!-- banner section end -->
@@ -115,18 +120,18 @@
                 <!-- Route details -->
                 <div class="bg-[#F7F8F8] mt-7 p-8 rounded-2xl">
                   <div class="flex justify-between ">
-                    <p>Route</p>
+                    <p class="text-[#03071299] font-semibold">Route</p>
                     <p class=" font-semibold">Dhaka - Sylhet</p>
                   </div>
                   <br>
-                  <hr>
+                  <hr class="border border-dashed">
                   <br>
                   <div class="flex justify-between ">
-                    <p>Departure Time</p>
+                    <p class="text-[#03071299] font-semibold">Departure Time</p>
                     <p class=" font-semibold">9:00 PM</p>
                   </div>
                   <br>
-                  <hr>
+                  <hr class="border border-dashed">
                   <br>
                   <div class="flex gap-12 justify-center">
                     <a href="#" class="btn text-black bg-[#0307120D] p-5">Boarding Point - Laxmipur</a>
@@ -148,11 +153,11 @@
 
           </div>
           <!-- Select Seat -->
-          <div class="bg-[#FFFFFF] container m-auto rounded-lg mt-4 p-7">
-            <div id="P-ticket" class="mt-30 w-[60%] ">
+          <div class="bg-[#FFFFFF] container m-auto rounded-lg mt-4 p-7 flex ">
+            <div id="p-ticket" class="mt-30 w-[60%] border-r-2 border-dashed pr-6">
               <h2 class="text-xl font-semibold">Select Your Seat</h2>
               <br>
-              <hr>
+              <hr class="border border-dashed">
               <br>
 
               <div class="flex justify-between">
@@ -170,7 +175,7 @@
 
               </div>
               <br>
-              <hr>
+              <hr class="border border-dashed">
               <br>
               <!-- steering -->
              <div class="flex justify-end">
@@ -178,13 +183,107 @@
                 <img src="images/steering.png" alt="">
               </div>
              </div>
-              <!-- steering -->
-             <div class="">
+              <!-- steering end-->
+              <!-- seat btn -->
+             <div class="flex gap-2 ">
+              <div class="w-[10%] space-y-11 mt-6">
+                <p>A</p>
+                <p>B</p>
+                <p>C</p>
+                <p>D</p>
+                <p>E</p>
+                <p>F</p>
+                <p>G</p>
+                <P>H</P>
+                <p>I</p>
+                <p>J</p>
+             </div>
+             <div class="grid lg:grid-cols-4 gap-5 mt-5  ">
+              <button class="btn bg-[#F7F8F8] px-16">A1</button>
+              <button class="btn bg-[#F7F8F8] px-16">A2</button>
+              <button class="btn bg-[#F7F8F8] px-16">A3</button>
+              <button class="btn bg-[#F7F8F8] px-16">A4</button>
 
+              <button class="btn bg-[#F7F8F8] px-16">B1</button>
+              <button class="btn bg-[#F7F8F8] px-16">B2</button>
+              <button class="btn bg-[#F7F8F8] px-16">B3</button>
+              <button class="btn bg-[#F7F8F8] px-16">B4</button>
+
+              <button class="btn bg-[#F7F8F8] px-16">C1</button>
+              <button class="btn bg-[#F7F8F8] px-16">C2</button>
+              <button class="btn bg-[#F7F8F8] px-16">C3</button>
+              <button class="btn bg-[#F7F8F8] px-16">C4</button>
+
+              <button class="btn bg-[#F7F8F8] px-16">D1</button>
+              <button class="btn bg-[#F7F8F8] px-16">D2</button>
+              <button class="btn bg-[#F7F8F8] px-16">D3</button>
+              <button class="btn bg-[#F7F8F8] px-16">D4</button>
+
+              <button class="btn bg-[#F7F8F8] px-16">E1</button>
+              <button class="btn bg-[#F7F8F8] px-16">E2</button>
+              <button class="btn bg-[#F7F8F8] px-16">E3</button>
+              <button class="btn bg-[#F7F8F8] px-16">E4</button>
+
+              <button class="btn bg-[#F7F8F8] px-16">F1</button>
+              <button class="btn bg-[#F7F8F8] px-16">F2</button>
+              <button class="btn bg-[#F7F8F8] px-16">F3</button>
+              <button class="btn bg-[#F7F8F8] px-16">F4</button>
+
+              <button class="btn bg-[#F7F8F8] px-16">G1</button>
+              <button class="btn bg-[#F7F8F8] px-16">G2</button>
+              <button class="btn bg-[#F7F8F8] px-16">G3</button>
+              <button class="btn bg-[#F7F8F8] px-16">G4</button>
+
+              <button class="btn bg-[#F7F8F8] px-16">H1</button>
+              <button class="btn bg-[#F7F8F8] px-16">H2</button>
+              <button class="btn bg-[#F7F8F8] px-16">H3</button>
+              <button class="btn bg-[#F7F8F8] px-16">H4</button>
+
+              <button class="btn bg-[#F7F8F8] px-16">I1</button>
+              <button class="btn bg-[#F7F8F8] px-16">I2</button>
+              <button class="btn bg-[#F7F8F8] px-16">I3</button>
+              <button class="btn bg-[#F7F8F8] px-16">I4</button>
+
+              <button class="btn bg-[#F7F8F8] px-16">J1</button>
+              <button class="btn bg-[#F7F8F8] px-16">J2</button>
+              <button class="btn bg-[#F7F8F8] px-16">J3</button>
+              <button class="btn bg-[#F7F8F8] px-16">J4</button>
+      
 
              </div>
 
+
+
+             </div>
+          
+
+
             </div>
+            <!-- totoal content -->
+            <div class="w-[40%]  pl-4 ">
+              <h2 class="text-xl font-semibold">Select Your Seat</h2>
+              <br>
+              <hr class="border border-dashed">
+             <div class="bg-[#F7F8F8] h-[335px] rounded-lg">
+              <div class="flex justify-between mt-4"> 
+                <p class="font-medium">Seat <span class="bg-[#1DD100] rounded-md px-2">2</span></p>
+                <p class="font-medium">Class</p>
+                <p class="font-medium">Price</p>
+              </div>
+
+              <div class="flex justify-between mt-4 "> 
+                <p><span>C2</span></p>
+                <p class="relative left-6">Economoy</p>
+                <p>550</p>
+              </div>
+
+              <div class="flex justify-between mt-4"> 
+                <p><span>C2</span></p>
+                <p class="relative left-6">Economoy</p>
+                <p>550</p>
+              </div>
+            </div>
+             </div>
           </div>
         </section>
         

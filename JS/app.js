@@ -6,14 +6,15 @@ for (const btn of allBtn) {
     btn.addEventListener('click',function(e) {
         e.target.style.backgroundColor="green";
         count++;
+        const seatValue= e.target.innerText;
         countSelectSeat=countSelectSeat-1
 
-         const seatName = e.target.parentNode.childNodes[3].innerText;
+        //  const seatName = e.target.parentNode.childNodes[3].innerText;
          const price = 550 ;
  
         const li =document.createElement('li');
         const p =document.createElement('p');
-        p.innerText=seatName;
+        p.innerText=seatValue;
         const p2 =document.createElement('p');
         p2.innerText='Economoy';
         const p3 =document.createElement('p');
@@ -29,11 +30,56 @@ for (const btn of allBtn) {
         console.log(count)
         setInnerText('total-seat',countSelectSeat);
         setInnerText("seat-count", count);
+        updateGrandTotal();
         // const select = e.target.innerText;
     }
     
     )
     
+}
+const ticketPrice=document.getElementById('ticket-price');
+
+// const new15=document.getElementById('copupon-1').innerText;
+// const couple20=document.getElementById('copupon-2').innerText;
+
+
+
+const grandTotal=document.getElementById('grand-total');
+const inputField = document.querySelector('#copupon');
+inputField.addEventListener('keyup',function(e) {
+    const inputFieldText= e.target.value;
+    if(inputFieldText){
+        
+        
+    }
+})
+
+
+function updateGrandTotal(status){
+    const totalCost=getConvetedValue('total-cost');
+    if(status===undefined){
+        
+        document.getElementById('grand-total').innerText=totalCost;
+
+    }else{
+
+        const copuponCode=document.getElementById('copupon').value;
+
+        if(copuponCode =="Couple20"){   
+            const discounted =totalCost*.2;
+            document.getElementById('grand-total').innerText=totalCost-discounted;
+
+        }else{
+            alert('Please enter a valid copupon code');
+        }
+
+
+        
+    }
+
+
+
+
 }
 
 function hideElementById(elementId){
@@ -60,4 +106,8 @@ function setTextElementValueById(elementId, value) {
     const element =document.getElementById(elementId);
     element.innerText = value;
 }
-
+function getConvetedValue(id){
+    const totalPrice= document.getElementById(id).innerText;
+    const convertPrice = parseInt(totalPrice);
+    return convertPrice;
+}

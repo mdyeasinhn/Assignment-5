@@ -44,15 +44,15 @@ const ticketPrice=document.getElementById('ticket-price');
 
 
 
-const grandTotal=document.getElementById('grand-total');
-const inputField = document.querySelector('#copupon');
-inputField.addEventListener('keyup',function(e) {
-    const inputFieldText= e.target.value;
-    if(inputFieldText){
+// const grandTotal=document.getElementById('grand-total');
+// const inputField = document.querySelector('#copupon');
+// inputField.addEventListener('keyup',function(e) {
+//     const inputFieldText= e.target.value;
+//     if(inputFieldText){
         
         
-    }
-})
+//     }
+// })
 
 
 function updateGrandTotal(status){
@@ -65,7 +65,7 @@ function updateGrandTotal(status){
 
         const copuponCode=document.getElementById('copupon').value;
 
-        if(copuponCode =="Couple20"){   
+        if(copuponCode =="Couple 20"){   
             const discounted =totalCost*.2;
             document.getElementById('grand-total').innerText=totalCost-discounted;
 

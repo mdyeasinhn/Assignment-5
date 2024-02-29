@@ -58,28 +58,17 @@ const ticketPrice=document.getElementById('ticket-price');
 function updateGrandTotal(status){
     const totalCost=getConvetedValue('total-cost');
     if(status===undefined){
-        
         document.getElementById('grand-total').innerText=totalCost;
-
     }else{
-
         const copuponCode=document.getElementById('copupon').value;
-
         if(copuponCode =="Couple 20"){   
             const discounted =totalCost*.2;
             document.getElementById('grand-total').innerText=totalCost-discounted;
-
         }else{
             alert('Please enter a valid copupon code');
         }
-
-
-        
     }
-
-
-
-
+   
 }
 
 function hideElementById(elementId){

@@ -61,8 +61,12 @@ function updateGrandTotal(status){
         document.getElementById('grand-total').innerText=totalCost;
     }else{
         const copuponCode=document.getElementById('copupon').value;
-        if(copuponCode =="Couple 20"){   
+        if(copuponCode =="Couple 20" ){   
             const discounted =totalCost*.2;
+            document.getElementById('grand-total').innerText=totalCost-discounted;
+        }
+        else if(copuponCode =="NEW15"){   
+            const discounted =totalCost*.15;
             document.getElementById('grand-total').innerText=totalCost-discounted;
         }else{
             alert('Please enter a valid copupon code');
